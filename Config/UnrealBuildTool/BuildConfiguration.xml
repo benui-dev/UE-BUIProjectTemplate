@@ -1,0 +1,11 @@
+ <?xml version="1.0" encoding="utf-8" ?>
+ <Configuration xmlns="https://www.unrealengine.com/BuildConfiguration">
+	 <BuildConfiguration>
+		 <bShadowVariableErrors>true</bShadowVariableErrors>
+		 <ProcessorCountMultiplier>2</ProcessorCountMultiplier>
+		 <bUsePCHFiles>false</bUsePCHFiles>
+		 <bUseSharedPCHs>false</bUseSharedPCHs>
+		 <bUseUnityBuild>false</bUseUnityBuild>
+	 </BuildConfiguration>
+ </Configuration>
+
