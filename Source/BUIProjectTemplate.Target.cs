@@ -5,10 +5,16 @@ using System.Collections.Generic;
 
 public class BUIProjectTemplateTarget : TargetRules
 {
-	public BUIProjectTemplateTarget( TargetInfo Target) : base(Target)
-	{
-		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "BUIProjectTemplate" } );
-	}
+    public BUIProjectTemplateTarget(TargetInfo Target) : base(Target)
+    {
+        Type = TargetType.Game;
+        bUseLoggingInShipping = false;
+        bUseIncrementalLinking = true;
+        DefaultBuildSettings = BuildSettingsVersion.V2;
+        ExtraModuleNames.AddRange(new string[] { "BUIProjectTemplate" });
+
+#if WITH_EDITOR
+         ExtraModuleNames.AddRange( new string[] { "BUIProjectTemplateEditor" } );
+#endif
+    }
 }

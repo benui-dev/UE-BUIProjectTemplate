@@ -8,7 +8,8 @@ public class BUIProjectTemplateEditorTarget : TargetRules
 	public BUIProjectTemplateEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "BUIProjectTemplate" } );
+        DefaultBuildSettings = BuildSettingsVersion.V2;
+        bUsePDBFiles = true;
+		ExtraModuleNames.AddRange( new string[] { "BUIProjectTemplate", "BUIProjectTemplateEditor" } );
 	}
 }

@@ -10,7 +10,7 @@
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "BUIProjectTempalteEditor",
+			"Name": "BUIProjectTemplateEditor",
 			"Type": "Editor",
 			"LoadingPhase": "PostEngineInit"
 		}
