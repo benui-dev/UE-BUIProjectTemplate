@@ -23,11 +23,13 @@ class UBUISaveGame : public USaveGame
 public:
 	//friend FArchive& operator<<( FArchive& ar, UBUISaveGame& SaveGameRef );
 
+	virtual void Serialize( FArchive& Ar ) override;
 
 	UPROPERTY()
 		FString TestName;
 	UPROPERTY()
 		FDateTime SaveTime;
+
 
 };
 

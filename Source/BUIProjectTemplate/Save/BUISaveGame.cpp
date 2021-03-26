@@ -13,7 +13,7 @@ void UBUISaveGameManager::SaveGame( UBUISaveGame* SaveGameObject, const FString&
 	// Call SaveGameToSlot to serialize and save our SaveGameObject with name: <SaveGameSlotName>.sav
 	const bool bIsSaved = UGameplayStatics::SaveGameToSlot( SaveGameObject, SaveGameSlotName, 0 );
 
-	if (bIsSaved )
+	if ( bIsSaved )
 	{
 		GEngine->AddOnScreenDebugMessage( -1, 15.0f, FColor::Green, TEXT( "Game saved successfully" ) );
 	}
@@ -94,3 +94,10 @@ if ( FFileHelper::SaveArrayToFile( SavedByteStream, *FilePath ) )
 }
 #endif
 #endif
+
+void UBUISaveGame::Serialize( FArchive& Ar )
+{
+	Super::Serialize( Ar );
+
+
+}
