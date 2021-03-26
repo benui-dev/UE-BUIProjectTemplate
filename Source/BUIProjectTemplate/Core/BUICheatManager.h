@@ -10,8 +10,8 @@ class UBUICheatManager : public UCheatManager
 
 public:
 	UFUNCTION( exec )
-		void TestSave();
+		void TestSave( FString SaveGameSlotName );
 	UFUNCTION( exec )
-		void TestLoad();
+		void TestLoad( const FString& SaveGameSlotName );
 };
 

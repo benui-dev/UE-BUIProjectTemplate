@@ -13,7 +13,14 @@ void UBUISaveGameManager::SaveGame( UBUISaveGame* SaveGameObject, const FString&
 	// Call SaveGameToSlot to serialize and save our SaveGameObject with name: <SaveGameSlotName>.sav
 	const bool bIsSaved = UGameplayStatics::SaveGameToSlot( SaveGameObject, SaveGameSlotName, 0 );
 
-	UE_LOG( LogTemp, Warning, TEXT( "Game saved? %d" ), bIsSaved );
+	if (bIsSaved )
+	{
+		GEngine->AddOnScreenDebugMessage( -1, 15.0f, FColor::Green, TEXT( "Game saved successfully" ) );
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage( -1, 15.0f, FColor::Red, TEXT( "Game save failed" ) );
+	}
 }
 
 
