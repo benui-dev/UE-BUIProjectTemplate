@@ -10,6 +10,8 @@ public class BUIProjectTemplateTarget : TargetRules
         Type = TargetType.Game;
         bUseLoggingInShipping = false;
         bUseIncrementalLinking = true;
+		bUseUnityBuild = false;
+		bUsePCHFiles = false;
         DefaultBuildSettings = BuildSettingsVersion.V2;
         ExtraModuleNames.AddRange(new string[] { "BUIProjectTemplate" });
 
