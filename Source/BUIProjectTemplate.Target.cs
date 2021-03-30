@@ -5,18 +5,20 @@ using System.Collections.Generic;
 
 public class BUIProjectTemplateTarget : TargetRules
 {
-    public BUIProjectTemplateTarget(TargetInfo Target) : base(Target)
-    {
-        Type = TargetType.Game;
-        bUseLoggingInShipping = false;
-        bUseIncrementalLinking = true;
+	public BUIProjectTemplateTarget( TargetInfo Target ) : base( Target )
+	{
+		Type = TargetType.Game;
+		bUseLoggingInShipping = false;
+		bUseIncrementalLinking = true;
+		// bUseMallocProfiler = true;
 		bUseUnityBuild = false;
 		bUsePCHFiles = false;
-        DefaultBuildSettings = BuildSettingsVersion.V2;
-        ExtraModuleNames.AddRange(new string[] { "BUIProjectTemplate" });
+		bEnforceIWYU = true;
+		DefaultBuildSettings = BuildSettingsVersion.V2;
+		ExtraModuleNames.AddRange( new string[] { "BUIProjectTemplate" } );
 
 #if WITH_EDITOR
-         ExtraModuleNames.AddRange( new string[] { "BUIProjectTemplateEditor" } );
+		ExtraModuleNames.AddRange( new string[] { "BUIProjectTemplateEditor" } );
 #endif
-    }
+	}
 }

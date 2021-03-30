@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "ISpudObject.h"
-#include "ExampleObject.generated.h"
+#include "SPUDExampleObject.generated.h"
 
 UCLASS()
 class BUIPROJECTTEMPLATE_API USPUDExampleObject : public UObject, public ISpudObject
