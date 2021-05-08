@@ -1,8 +1,15 @@
 # BUI Project Template
 
+This is an Unreal Engine 4 project template that I have created for starting
+small projects as quickly as possible.
+
+It has the following features:
+
 * As many plugins disabled as possible.
+* Automated test blanks setup.
 * Sensible config defaults.
 * ImGUI plugin installed.
+* Custom cheat manager.
 
 ## Setup
 
