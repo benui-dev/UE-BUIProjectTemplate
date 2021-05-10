@@ -2,7 +2,7 @@ using UnrealBuildTool;
 
 public class BUIProjectTemplateEditor : ModuleRules
 {
-	public BUIProjectTemplateEditor(ReadOnlyTargetRules Target) : base(Target)
+	public BUIProjectTemplateEditor( ReadOnlyTargetRules Target ) : base( Target )
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
@@ -22,10 +22,10 @@ public class BUIProjectTemplateEditor : ModuleRules
 				"Engine",
 				"Slate",
 				"UnrealEd",
-                "BlueprintGraph",
-                "UMG",
-                "Json",
-                "JsonUtilities",
+				"BlueprintGraph",
+				"UMG",
+				"Json",
+				"JsonUtilities",
 			}
 		);
 
@@ -35,19 +35,19 @@ public class BUIProjectTemplateEditor : ModuleRules
 				"RHI",
 				"SourceControl",
 				"PropertyEditor",
-                "GameplayAbilities",
-                "GameplayAbilitiesEditor",
-                "GameplayTags",
+				"GameplayAbilities",
+				"GameplayAbilitiesEditor",
+				"GameplayTags",
 				"GameplayTagsEditor",
-                "RawMesh",
-                "SlateCore",
-                "StaticMeshEditor",
-                "WorldBrowser",
+				"RawMesh",
+				"SlateCore",
+				"StaticMeshEditor",
+				"WorldBrowser",
 				"BUIProjectTemplate",
-                "EditorStyle",
-                "DesktopPlatform",
-            }
-        );
+				"EditorStyle",
+				"DesktopPlatform",
+			}
+		);
 
 		DynamicallyLoadedModuleNames.AddRange(
 			new string[] {
