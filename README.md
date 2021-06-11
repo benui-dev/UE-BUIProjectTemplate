@@ -16,7 +16,7 @@ It has the following features:
 1. Clone this repo somewhere.
 2. Update the Git Submodules: `git submodule init` and `git submodule update`
 3. Make a symlink from within the Templates directory of your UE4
-   install to your Git repo. For example: `mklink /D "C:\Program Files\Epic Games\UE_4.26\Templates\BUIProjectTemplate" "C:\GitStuff\BUIProjectTemplate"` 
+   install to your Git repo. For example, open the Command Line as Administrator and enter: `mklink /D "C:\Program Files\Epic Games\UE_4.26\Templates\BUIProjectTemplate" "C:\GitStuff\BUIProjectTemplate"` 
 4. Run the Unreal New Project Wizard and choose "BUI Blank Project"
 
 ## Getting Updates
